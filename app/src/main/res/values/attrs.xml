@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageTextButton">
+        <attr name="show_image_view" format="boolean"/>
+        <attr name="show_text_view" format="boolean"/>
+        <attr name="is_selected" format="boolean"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="image_padding" format="dimension"/>
+        <attr name="selected_background" format="reference"/>
+        <attr name="selected_image" format="reference"/>
+        <attr name="selected_text" format="string"/>
+        <attr name="selected_text_color" format="color"/>
+        <attr name="normal_background" format="reference"/>
+        <attr name="normal_image" format="reference"/>
+        <attr name="normal_text" format="string"/>
+        <attr name="normal_text_color" format="color"/>
+    </declare-styleable>
+</resources>

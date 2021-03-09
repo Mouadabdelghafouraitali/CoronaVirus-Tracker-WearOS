@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.activities.OverviewActivity"
+    tools:deviceIds="wear">
+
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/itemsOverView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:dsv_orientation="horizontal" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateTint="@color/md_blue_500" />
+
+    <maa.covid_wear.ui.views.ImageTextButton
+        android:id="@+id/noData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        app:is_selected="true"
+        app:normal_image="@drawable/no_data"
+        app:normal_text="Ops! no data"
+        app:normal_text_color="@color/black"
+        app:selected_image="@drawable/no_data"
+        app:selected_text="Ops! no data"
+        app:selected_text_color="@color/black" />
+</RelativeLayout>
